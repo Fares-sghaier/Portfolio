@@ -1,48 +1,65 @@
-import React from 'react'
-import {Container, Row, Col} from 'react-bootstrap'
-import {AiFillGithub, AiOutlineTwitter, AiFillInstagram} from 'react-icons/ai'
-import {FaLinkedinIn} from 'react-icons/fa'
+import React from "react";
+import { Button } from "./Button/Button";
+import { Link } from "react-router-dom";
+import {
+  FaFacebook,
+  FaInstagram,
+  FaYoutube,
+  FaTwitter,
+  FaLinkedin,
+} from "react-icons/fa";
+import { MdFingerprint } from "react-icons/md";
 
 function Footer() {
-  let date = new Date()
-  let year = date.getFullYear()
   return (
-    <Container fluid className="footer">
-      <Row>
-        <Col md="4" className="footer-copywright">
-          <h3>Designed and Developed by Mohit Sojitra</h3>
-        </Col>
-        <Col md="4" className="footer-copywright">
-          <h3>Copyright © {year} MS</h3>
-        </Col>
-        <Col md="4" className="footer-body">
-          <ul className="footer-icons">
-            <li className="social-icons">
-              <a
-                href="https://github.com/MohitSojitra"
-                style={{color: 'white'}}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <AiFillGithub />
-              </a>
-            </li>
-
-            <li className="social-icons">
-              <a
-                href="https://www.linkedin.com/in/mohit-sojitra/"
-                style={{color: 'white'}}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FaLinkedinIn />
-              </a>
-            </li>
-          </ul>
-        </Col>
-      </Row>
-    </Container>
-  )
+    <div className="footer-container">  
+      <section className="social-media">
+        <div className="social-media-wrap">
+          <div className="footer-logo">
+            <Link to="/" className="social-logo">
+              <MdFingerprint className="navbar-icon" />
+              FARES
+            </Link>
+          </div>
+          <small className="website-rights">FARES © 2020</small>
+          <div className="social-icons">
+            <a
+              className="social-icon-link"
+              href="https://www.facebook.com/fares.sghayer.5/"
+              target="_blank"
+              aria-label="Facebook"
+            >
+              <FaFacebook />
+            </a>
+            <a
+              className="social-icon-link"
+              href="https://www.instagram.com/fares_sghaierr/"
+              target="_blank"
+              aria-label="Instagram"
+            >
+              <FaInstagram />
+            </a>
+            <a
+              className="social-icon-link"
+              href="https://twitter.com/f_sghayer"
+              target="_blank"
+              aria-label="Twitter"
+            >
+              <FaTwitter />
+            </a>
+            <a
+              className="social-icon-link"
+              href="https://www.linkedin.com/in/fares-sghaier-23a1a4238/"
+              target="_blank"
+              aria-label="LinkedIn"
+            >
+              <FaLinkedin />
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
 }
 
-export default Footer
+export default Footer;

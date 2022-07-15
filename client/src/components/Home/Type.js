@@ -1,15 +1,15 @@
 import React from 'react'
 import Typewriter from 'typewriter-effect'
 
-function Type() {
+const Type = () => {
   return (
     <Typewriter
       options={{
         strings: [
-          'Developer',
-          'Software Engineer',
-          'MERN Stack Developer',
-          'Open Source Contributor',
+          'Full Stack Developer 💻',
+          'Passionated ❤️',
+          'Hard Worker 😌',
+          'Enthusiastic Dev 😁',
         ],
         autoStart: true,
         loop: true,

@@ -5,9 +5,9 @@ import Github from "./Github";
 import Techstack from "./Techstack";
 import Aboutcard from "./AboutCard";
 import laptopImg from "../../Assets/about.png";
-import Toolstack from "./Toolstack";
 
-function About() {
+
+const  About = () => {
   return (
     <Container fluid className="about-section">
       <Particle />
@@ -35,16 +35,9 @@ function About() {
           </Col>
         </Row>
         <h1 className="project-heading">
-          Professional <strong className="purple">Skillset </strong>
+          Technologies <strong className="purple">Used </strong>
         </h1>
-
         <Techstack />
-
-        <h1 className="project-heading">
-          <strong className="purple">Tools</strong> I use
-        </h1>
-        <Toolstack />
-
         <Github />
       </Container>
     </Container>

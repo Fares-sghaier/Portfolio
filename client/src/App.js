@@ -13,7 +13,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 import ScrollToTop from "./components/ScrollToTop";
 
-function App() {
+const  App = () => {
   const [load, upadateLoad] = useState(true);
   
   useEffect(() => {

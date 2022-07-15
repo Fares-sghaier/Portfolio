@@ -5,6 +5,7 @@ import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 import { CgGitFork } from "react-icons/cg";
+import { MdFingerprint } from "react-icons/md";
 import {
   AiFillStar,
   AiOutlineHome,
@@ -14,7 +15,7 @@ import {
 import { ImBlog } from "react-icons/im";
 import { CgFileDocument } from "react-icons/cg";
 
-function NavBar() {
+const  NavBar = () => {
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
 
@@ -25,9 +26,7 @@ function NavBar() {
       updateNavbar(false);
     }
   }
-
   window.addEventListener("scroll", scrollHandler);
-
   return (
     <Navbar
       expanded={expand}
@@ -36,17 +35,20 @@ function NavBar() {
       className={navColour ? "sticky" : "navbar"}
     >
       <Container>
+      
         <Navbar.Brand as={Link} to="/">
+        
           <p
             style={{
-              color: "#be50f4",
+              color: "#e9cd3b",
               margin: "auto",
               fontWeight: "700",
               letterSpacing: "1px",
               fontSize: "28px",
             }}
           >
-            Mohit Sojitra
+           <MdFingerprint className="navbar-icon" />
+            Fares Sghaier
           </p>
         </Navbar.Brand>
         <Navbar.Toggle
@@ -98,27 +100,6 @@ function NavBar() {
               >
                 <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
               </Nav.Link>
-            </Nav.Item>
-
-            <Nav.Item>
-              <Nav.Link
-                href="https://blog.mohitsojitra.tech/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <ImBlog style={{ marginBottom: "2px" }} /> Blogs
-              </Nav.Link>
-            </Nav.Item>
-
-            <Nav.Item className="fork-btn">
-              <Button
-                href="https://github.com/MohitSojitra/portfolio"
-                target="_blank"
-                className="fork-btn-inner"
-              >
-                <CgGitFork style={{ fontSize: "1.2em" }} />{" "}
-                <AiFillStar style={{ fontSize: "1.1em" }} />
-              </Button>
             </Nav.Item>
           </Nav>
         </Navbar.Collapse>

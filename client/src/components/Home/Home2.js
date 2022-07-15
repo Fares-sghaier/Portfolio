@@ -5,7 +5,7 @@ import Tilt from 'react-parallax-tilt'
 import {AiFillGithub, AiOutlineTwitter, AiFillInstagram} from 'react-icons/ai'
 import {FaLinkedinIn} from 'react-icons/fa'
 
-function Home2() {
+const Home2 = () => {
   return (
     <Container fluid className="home-about-section" id="about">
       <Container>
@@ -62,7 +62,7 @@ function Home2() {
             <ul className="home-about-social-links">
               <li className="social-icons">
                 <a
-                  href="https://github.com/MohitSojitra"
+                  href="https://github.com/Fares-sghaier"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -73,7 +73,7 @@ function Home2() {
 
               <li className="social-icons">
                 <a
-                  href="https://www.linkedin.com/in/mohit-sojitra/"
+                  href="https://www.linkedin.com/in/fares-sghaier-23a1a4238/"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"

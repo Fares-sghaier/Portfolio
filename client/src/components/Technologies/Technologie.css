@@ -1,0 +1,124 @@
+.Technologie__section {
+    padding: 100px 0 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #130f1a;
+  }
+  
+  .Technologie__container-card {
+    background: linear-gradient(45deg, #e92106 0%, #276afb 100%);
+    box-shadow: 0 6px 20px rgb(244, 43, 8);
+    width: 280px;
+    height: 500px;
+    text-decoration: none;
+    border-radius: 4px;
+  }
+  
+  .Technologie__container-card:nth-child(2) {
+    transform: scale(1.05);
+    background: linear-gradient(45deg, #171321 0%, #e92106 100%);
+    /* background: #171321; */
+  }
+  
+  .Technologie__container-card:hover {
+    transform: scale(1.06);
+    transition: all 0.3s ease-out;
+    color: #1c2237;
+  }
+  
+  .Technologie__container-card:nth-child(2) {
+    margin: 0 24px;
+  }
+  
+  .Technologie__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .Technologie__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin: 0 auto;
+  }
+  
+  .Technologie__heading {
+    color: #ffffff;
+    margin-bottom: 42px;
+    text-align: center;
+  }
+  
+  .Technologie__container-cardInfo {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    padding: 24px;
+    align-items: center;
+    color: #fff;
+  }
+  
+  .Technologie__container-cardInfo h3 {
+    margin-bottom: 5px;
+    font-size: 24px;
+  }
+  
+  .Technologie__container-cardInfo h4 {
+    font-size: 40px;
+  }
+  
+  .Technologie__container-cardInfo p {
+    font-size: 14px;
+    margin-bottom: 24px;
+  }
+  
+  .Technologie__container-features {
+    margin: 16px 0 32px;
+    list-style: none;
+  }
+  
+  .Technologie__container-features li {
+    margin-bottom: 10px;
+  }
+  
+  .Technologie__container-features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .icon {
+    margin: 24px 0;
+  }
+  
+  @media screen and (max-width: 960px) {
+    .Technologie__container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
+  
+    .Technologie__container-card {
+      width: 90%;
+    }
+  
+    .Technologie__wrapper {
+      margin: 0 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .Technologie__container-card:nth-child(2) {
+      transform: scale(1);
+      background: #242424;
+      margin: 24px;
+    }
+  
+    .Technologie__container-card:hover {
+      transform: none;
+    }
+  }

@@ -3,7 +3,7 @@ import Nav from "react-bootstrap/Nav";
 import Button from "react-bootstrap/Button";
 import axios from "axios";
 
-function Like() {
+const  Like = () => {
   const uri = "https://porfolio-backend.vercel.app/likes/getLikes";
   const postUri = "https://porfolio-backend.vercel.app/likes/updateLikes";
 
