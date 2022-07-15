@@ -1,24 +1,45 @@
+import React, { useState, useEffect } from "react";
+import Preloader from "../src/components/Pre";
+import Navbar from "./components/Navbar";
+import Home from "./components/Home/Home";
+import About from "./components/About/About";
+import Projects from "./components/Projects/Projects";
+import Footer from "./components/Footer";
+import Resume from "./components/Resume/Resume";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import "./style.css";
 import "./App.css";
-// import Home from "././Container/Home/Home.jsx";
-import React from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import ScrollToTop from "./Container/ScrollToTop";
-import Navbar from "./Container/Navbar/Navbar";
-import Services from './Container/Services/Services';
-import Products from './Container/Products/Products.jsx';
-import Home from "./Container/HomePage/Home.jsx";
-import Resume from "./Container/Resume/Resume";
-export default function App() {
+import "bootstrap/dist/css/bootstrap.min.css";
+
+import ScrollToTop from "./components/ScrollToTop";
+
+function App() {
+  const [load, upadateLoad] = useState(true);
+  
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      upadateLoad(false);
+    }, 1200);
+    
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <Router>
-      <ScrollToTop />
-      <Navbar />
-      <Switch>
-         <Route path="/" exact component={Home}></Route>
-         <Route path="/resume" component={Resume}></Route>
-         <Route path='/services' component={Services} />
-        <Route path='/products' component={Products} />
-      </Switch>
+      <Preloader load={load} />
+      <div className="App" id={load ? "no-scroll" : "scroll"}>
+        <Navbar />
+        <ScrollToTop />
+        <Switch>
+          <Route path="/" exact component={Home} />
+          <Route path="/project" component={Projects} />
+          <Route path="/about" component={About} />
+          <Route path="/resume" component={Resume} />
+        </Switch>
+        <Footer />
+      </div>
     </Router>
   );
 }
+
+export default App;
