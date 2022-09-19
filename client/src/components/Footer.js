@@ -12,7 +12,7 @@ import { MdFingerprint } from "react-icons/md";
 
 function Footer() {
   return (
-    <div className="footer-container">  
+    <div className="footer-container">
       <section className="social-media">
         <div className="social-media-wrap">
           <div className="footer-logo">
@@ -21,7 +21,7 @@ function Footer() {
               FARES
             </Link>
           </div>
-          <small className="website-rights">FARES © 2020</small>
+          <small className="website-rights">FARES © 2022</small>
           <div className="social-icons">
             <a
               className="social-icon-link"

@@ -10,40 +10,46 @@ const Home2 = () => {
     <Container fluid className="home-about-section" id="about">
       <Container>
         <Row>
+        
+
+  
+
+
+
+ 
           <Col md={8} className="home-about-description">
             <h1 style={{fontSize: '2.6em'}}>
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              I fell in love with programming and I have at least learnt
-              something, I think… 🤷‍♂️
+            I'm a full-Stack developer graduated from RBK Tunisia, passioned about computer science , I’ve always been a great problem solver, and a technophile obsessed with the latest devices. Today, I'm seeking for new opportunities where I can develop and improve my personal skills.
               <br />
-              <br />I am fluent in classics like
+              <br />I started learning code in early age,
               <i>
-                <b className="purple"> C++, Javascript and Python. </b>
+                <b className="purple"> though it was always more of a hobby than a career focus.</b>
               </i>
               <br />
               <br />
-              My field of Interest's are building new &nbsp;
+              After a high school education in Science, and continuing to pursue that hobby, I realized software engineering was the right field for me. &nbsp;
               <i>
                 <b className="purple">
-                  Web Technologies, Application developement and Products{' '}
+                Since then, I’ve worked on countless of projects and have been involved with a startup project,
                 </b>{' '}
-                and also in areas related to <b className="purple">Clouds.</b>
+                I worked as a junior developer with an amazing team to build an application for a new startup that will help the users to sign and share contracts, and am getting into machine learning on my own time.I’m familiar with a variety of programming languages, <b className="purple">including JavaScript, HTML, CSS, React, jQuery, and AngularJS... ,</b>
               </i>
               <br />
               <br />
-              Whenever possible, I also apply my passion for developing products
-              with <b className="purple">Node.js</b> and
+              but I’m always adding new skills to my repertoire. I’m also eager to meet software engineers in the area, 
+              <b className="purple">so feel free to connect!</b> 
               <i>
                 <b className="purple">
                   {' '}
-                  Modern Javascript Library and Frameworks
+                
                 </b>
               </i>
-              &nbsp; like
+              .
               <i>
-                <b className="purple"> React.js and Next.js</b>
+                <b className="purple"></b>
               </i>
             </p>
           </Col>
